@@ -1,0 +1,16 @@
+<h1>hello closure</h1>
+
+<script>
+  function extent(){
+  	return {
+  		val: 0,
+  		call: function(){
+  			this.val++;
+  			console.log("val="+this.val);
+  		}
+  	}
+  }
+  f = extent();
+  f.call();
+  f.call();
+</script>

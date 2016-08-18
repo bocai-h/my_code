@@ -1,0 +1,14 @@
+<h1>hello closure</h1>
+<script>
+   function extent(){
+   	var n = 0;
+   	return function(){
+   		n++;
+   		console.log("n="+n);
+   	}
+   }
+
+   f = extent();
+   f();
+   f();
+</script>
