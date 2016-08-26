@@ -91,9 +91,12 @@ end
 
 # puts [ [ [ ], [ ] ] ].same_structure_as([ [ [ ], [ ] ] ])
 
- puts [ 1, 1, 1 ].same_structure_as( [ 2, 2, 2 ] )
- puts [ 1, [ 1, 1 ] ].same_structure_as( [ 2, [ 2, 2 ] ] )
- puts [ 1, [ 1, 1 ] ].same_structure_as( [ [ 2, 2 ], 2 ] )
- puts [ 1, [ 1, 1 ] ].same_structure_as( [ [ 2 ], 2 ] )
- puts [ [ [ ], [ ] ] ].same_structure_as( [ [ [ ], [ ] ] ] )
- puts [ [ [ ], [ ] ] ].same_structure_as( [ [ 1, 1 ] ] )
+ # puts [ 1, 1, 1 ].same_structure_as( [ 2, 2, 2 ] )
+ # puts [ 1, [ 1, 1 ] ].same_structure_as( [ 2, [ 2, 2 ] ] )
+ # puts [ 1, [ 1, 1 ] ].same_structure_as( [ [ 2, 2 ], 2 ] )
+ # puts [ 1, [ 1, 1 ] ].same_structure_as( [ [ 2 ], 2 ] )
+ # puts [ [ [ ], [ ] ] ].same_structure_as( [ [ [ ], [ ] ] ] )
+ # puts [ [ [ ], [ ] ] ].same_structure_as( [ [ 1, 1 ] ] )
+
+ 
+ puts [ [ ], 1 ].same_structure_as([ 1, [ ] ])
