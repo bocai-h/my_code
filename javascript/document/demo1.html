@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>hello document</title>
+<script type="text/javascript">
+  function createNewDoc(){
+  	var newDoc=document.open("text/html","replace");
+  	var txt="<html><body>Learning about the DOM is FUN!</body></html>";
+  	newDoc.write(txt);
+  	newDoc.close();
+  }
+</script>
+</head>
+<body>
+   <input type="button" value="write to a new  document" onclick="createNewDoc()">
+</body>
+</html>
