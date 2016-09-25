@@ -1,5 +1,5 @@
 #encoding: utf-8
-class TestArray < Array
+class Array
   def bubble_sort
     (self.size-2).downto(1) do |i|
        (0..i).each do |j|
@@ -28,30 +28,30 @@ class TestArray < Array
   end
 end
 
-array = []
-1000.times do |i|
-  array << i
-end
+# array = []
+# 1000.times do |i|
+#   array << i
+# end
 
-array = TestArray.new(array.shuffle)
+# array = TestArray.new(array.shuffle)
 
-t1_s = Time.now
-array_sort1 = array.bubble_sort
-t1_e = Time.now
+# t1_s = Time.now
+# array_sort1 = array.bubble_sort
+# t1_e = Time.now
 
-puts "普通冒泡排序花费时间#{(t1_e - t1_s).to_s}"
+# puts "普通冒泡排序花费时间#{(t1_e - t1_s).to_s}"
 
-puts "普通冒泡排序结果:"
+# puts "普通冒泡排序结果:"
 
-p array_sort1
+# p array_sort1
 
-puts "==============================================="
-t2_s = Time.now
-array_sort2 = array.better_bubble_sort
-t2_e = Time.now
+# puts "==============================================="
+# t2_s = Time.now
+# array_sort2 = array.better_bubble_sort
+# t2_e = Time.now
 
-puts "优化冒泡排序花费时间#{(t2_e - t2_s).to_s}"
+# puts "优化冒泡排序花费时间#{(t2_e - t2_s).to_s}"
 
-puts "优化冒泡排序结果:"
+# puts "优化冒泡排序结果:"
 
-p array_sort2
+# p array_sort2

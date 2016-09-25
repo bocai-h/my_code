@@ -1,4 +1,5 @@
 require 'rack'
+require 'pry'
 
 app = Rack::Builder.new do
 	map "/finder" do
