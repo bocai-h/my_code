@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html,charset=utf-8" />
+    <style type="text/css">
+       body{
+       	background: #706F6F;
+       	height: 200em;
+       }
+       div{
+       	width: 20em;
+       	height: 15em;
+       	background: white;
+         display: inline-block;
+         margin-right: 5em;
+         margin-bottom: 3em;
+         background-clip: padding-box; 
+       }
+       .content{
+         border: 10px dashed hsla(0,0%,100%,.5);
+         
+       }
+       .border-w{
+         background: yellowgreen;
+         border: 10px solid #655;
+       }
+       .border-extend{
+         background: yellowgreen;
+         box-shadow: 0 0 0 10px #655,0 0 0 15px deeppink;
+       }
+       .border-extend2{
+         background: yellowgreen;
+         box-shadow: 0 0 0 10px #655,0 0 0 15px deeppink,0 2px 5px 15px rgba(0,0,0,.6);
+       }
+       .border-extend3{
+        background: #706F9F;
+        border: 10px solid #655;
+        outline: 4px dashed white;
+        outline-offset: -30px;
+       }
+      .border-extend4{
+        background: #706F9F;
+        border: 10px solid #655;
+        border-radius: 3em;
+        outline: 4px dashed white;
+       }
+    </style>
+  </head>
+  <body>
+    <div class="content"></div>
+    <div class="border-w"></div>
+    <div class="border-extend"></div>
+    <div class="border-extend2"></div>
+    <div class="border-extend3"></div>
+    <div class="border-extend4"></div>
+  </body>
+</html>

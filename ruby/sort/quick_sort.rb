@@ -81,15 +81,15 @@ def quick_sort_v3(ary,left,right)
   ary
 end
 
-a = [6,2,7,3,8,9,20,0,12,69,87]
+# a = [6,2,7,8,9,20,0,12,69,87]
 
-p quick_sort_v3(a,0,a.size - 1)
+# p quick_sort_v3(a,0,a.size - 1)
 # 经过benchmark测试 明显v2的效率要更高一些 可能是Array#select比较耗时间吧 毕竟相当于便利了一次
-# Benchmark.ips do |x|
-#   ary = (1..1000).to_a.shuffle
-#   x.report("quick_sort_v1") { quick_sort(ary) }
-#   x.report("quick_sort_v2") { quick_sort_v2(ary,0,ary.size - 1) }
-#   x.report("normal_sort") { ary.sort }
-#   x.report("bubble_sort") { ary.bubble_sort }
-#   x.report("select_sort") { ary.bubble_sort }
-# end
+Benchmark.ips do |x|
+  ary = (1..1000).to_a.shuffle
+  x.report("quick_sort_v1") { quick_sort(ary) }
+  x.report("quick_sort_v2") { quick_sort_v2(ary,0,ary.size - 1) }
+  x.report("normal_sort") { ary.sort }
+  x.report("bubble_sort") { ary.bubble_sort }
+  x.report("select_sort") { ary.bubble_sort }
+end

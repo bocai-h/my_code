@@ -1,0 +1,246 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <!-- 2秒后自动跳转到百度 -->
+    <!-- <meta http-equiv="Refresh" content="2;URL=http://www.baidu.com"/>   -->
+    <!-- <meta http-equiv="Page-Enter" contect="revealTrans(duration=5.0,transtion=1)"/>    -->
+  </head>
+  <style type="text/css">
+      body{
+       	background: #706F6F;
+       	height: 200em;
+       }
+       div{
+        display: inline-block;
+        vertical-align: middle;
+       }
+       div.out{
+        margin-right: 2em;
+        margin-bottom: 2em;
+       }
+       .demo1{
+        width: 20em;
+        background: #655;
+        padding: .8em;
+       }
+       .demo1 > div{
+        background: tan;
+        border-radius: .8em;
+        padding: 1em;
+       }
+       .demo2{
+         background: tan;
+         width: 20em;
+         border-radius: .8em;
+         box-shadow: 0 0 0 .6em red;
+         outline: .6em solid #655;
+       }
+       .demo3{
+         width: 20em;
+         height: 15em;
+         background: linear-gradient(#fb3,#58a);
+       }
+       .demo4{
+         width: 20em;
+         height: 15em;
+         background: linear-gradient(#fb3 20%,#58a 80%);
+       }
+        .demo5{
+         width: 20em;
+         height: 15em;
+         background: linear-gradient(#fb3 40%,#58a 60%);
+       }
+        .demo6{
+         width: 20em;
+         height: 15em;
+         background: linear-gradient(#fb3 50%,#58a 50%);
+       }
+       .demo7{
+         width: 20em;
+         height: 15em;
+         background: linear-gradient(#fb3 50%,#58a 50%);
+         background-size: 100% 30px;
+       }
+      .demo8{
+         width: 20em;
+         height: 15em;
+         background: linear-gradient(#fb3 30%,#58a 30%);
+         background-size: 100% 30px;
+       }
+       .demo9{
+         width: 20em;
+         height: 15em;
+         background: linear-gradient(#fb3 30%,#58a 0);
+         background-size: 100% 30px;
+       }
+       .demo10{
+         width: 20em;
+         height: 15em;
+         background: linear-gradient(#fb3 33.3%,#58a 0,#58a 66.6%,yellowgreen 0);
+         background-size: 100% 45px;
+       }
+      .demo11{
+         width: 20em;
+         height: 15em;
+         background: white;
+         background-image: linear-gradient(90deg,rgba(200,0,0,.5) 50%,transparent 0),
+                            linear-gradient(rgba(200,0,0,.5) 50%,transparent 0);
+         background-size: 30px 30px;
+       }
+      .demo12{
+         width: 20em;
+         height: 15em;
+         background: #58a;
+         background-image: linear-gradient(white 1px,transparent 0),
+                            linear-gradient(90deg,white 1px,transparent 0);
+         background-size: 30px 30px;
+       }
+      .demo13{
+         width: 20em;
+         height: 15em;
+         background: #58a;
+         background-image: linear-gradient(white 2px,transparent 0),
+                            linear-gradient(90deg,white 2px,transparent 0),
+                            linear-gradient(hsla(0,0%,100%,.3) 1px,transparent 0),
+                            linear-gradient(90deg,hsla(0,0%,100%,.3) 1px,transparent 0);
+         background-size: 75px 75px,75px 75px,
+                            15px 15px,15px 15px;
+       }
+       .demo14{
+         width: 20em;
+         height: 15em;
+         background: #655;
+         background-image: radial-gradient(tan 30%,transparent 0);
+         background-size: 30px 30px;
+       }
+       .demo15{
+         width: 20em;
+         height: 15em;
+         background: #655;
+         background-image: radial-gradient(tan 30%,transparent 0),
+                             radial-gradient(tan 30%,transparent 0);
+         background-size: 30px 30px;
+         background-position: 0 0,15px 15px;
+       }
+      .demo16{
+         width: 20em;
+         height: 15em;
+         background: #eee;
+         background-image: linear-gradient(45deg,#bbb 25%,transparent 0);
+         background-size: 30px 30px;
+       }
+      .demo17{
+         width: 20em;
+         height: 15em;
+         background: #eee;
+         background-image: linear-gradient(45deg,transparent 75%,#bbb 0);
+         background-size: 30px 30px;
+       }
+       .demo18{
+         width: 20em;
+         height: 15em;
+         background: #eee;
+         background-image: linear-gradient(45deg,#bbb 25%,transparent 0),
+                              linear-gradient(45deg,transparent 75%,#58a 0);
+         background-size: 30px 30px;
+         background-position: 0 0,15px 15px;
+       }
+       .demo19{
+          width: 20em;
+          height: 15em;
+          background: #eee;
+          background-image: linear-gradient(45deg,#bbb 25%,transparent 0),
+                              linear-gradient(45deg,transparent 75%,#bbb 0),
+                              linear-gradient(45deg,#bbb 25%,transparent 0),
+                              linear-gradient(45deg,transparent 75%,#bbb 0);
+          background-size: 30px 30px;
+          background-position: 0 0,15px 15px,
+                                15px 15px,30px 30px;
+       }
+      .demo20{
+          width: 20em;
+          height: 15em;
+          background: #eee url('data:image/svg+xml,\
+                                 <svg xmlns="http://www.w3.org/2000/svg"\
+                                  width="100" height="100"\
+                                  fill-opacity=".25">\
+                                  <rect x="50" width="50" height="50" />\
+                                  <rect y="50" width="50" height="50" />\
+                                  </svg>');
+          background-size: 30px 30px;
+       }
+       .demo21{
+          width: 20em;
+          height: 15em;
+          background: hsl(20,40%,90%);
+          background-image: linear-gradient(90deg,#fb3 10px,transparent 0),
+                              linear-gradient(90deg,#ab4 20px,transparent 0);
+          background-size: 80px 100%,60px 100%;
+       }
+       .demo22{
+          width: 20em;
+          height: 15em;
+       }
+       @keyframes ants{to { background-position: 100% }}
+       .matching-ants{
+         padding: 1em;
+         border: 2px solid transparent;
+         background: linear-gradient(white,white) padding-box,
+         repeating-linear-gradient(-45deg,black 0,black 25%,white 0,white 50%) 0 / .6em .6em;
+         animation: ants 12s linear infinite;
+       }
+       .demo23{
+          width: 20em;
+          height: 15em;
+          background: #65a;
+          color: blue;
+          border-top: .6em solid transparent;
+          border-image: 100% 0 0 linear-gradient(90deg,currentColor 4em,black 0);
+          padding-top: 1em;
+       }
+  </style>
+  <body>
+     <div class="demo1 out">
+       <div>I have a nice subtle inner rounding,don't I look pretty?</div>
+     </div>
+     <div class="demo2 out">
+       I have a nice subtle inner rounding,don't I look pretty?
+     </div>
+     <div class="demo3 out">
+       nothing
+     </div>
+      <div class="demo4 out">
+       20% 80%
+     </div>
+      <div class="demo5 out">
+        40% 60%
+     </div>
+     <div class="demo6 out">
+        50% 50%
+     </div>
+      <div class="demo7 out">
+       50% 50% size 100% 30px
+     </div>
+     <div class="demo8 out">
+       30% 530% size 100% 30px
+     </div>
+      <div class="demo9 out">
+        vertical-align  vertical-align vertical-align vertical-align vertical-align vertical-align vertical-align
+     </div>
+     <div class="demo10 out"></div>
+     <div class="demo11 out"></div>
+     <div class="demo12 out"></div>
+     <div class="demo13 out"></div>
+     <div class="demo14 out"></div>
+     <div class="demo15 out"></div>
+     <div class="demo16 out"></div>
+     <div class="demo17 out"></div>
+     <div class="demo18 out"></div>
+     <div class="demo19 out"></div>
+     <div class="demo20 out">svg</div>
+     <div class="demo21 out"></div>
+     <div class="demo22 out matching-ants"></div>
+     <div class="demo23 out">I'm a test</div>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+      <title>demo1</title>
+      <style type="text/css">
+         *{
+         	  padding: 0px;
+         	  margin: 0px;
+         }
+         div.body-container{
+         	  background-color: #DAD7D7;
+           min-height: 50em;
+         }
+         header h2,footer{
+         	  width: 30em;
+         	  margin: auto auto;
+         }
+         div.button-demo{
+         	  width: 15em;
+         	  height: 10em;
+         	  background-color: white;
+         	  display: inline-block;
+         	  margin: 1em 3em;
+         	  border-radius: 4px;
+           box-shadow: 0 1px 15px gray;
+           text-align: center;
+         }
+          button.btn1{
+         	  padding: .3em .8em;
+         	  border: 1px solid #446d88;
+         	  background: #58a linear-gradient(#77a0bb,#58a);
+         	  border-radius: .2em;
+           box-shadow: 0 .05em .25em gray;
+           text-shadow: 0 -.05em .05em #335166;
+         	  color: white;
+         	  /* 字体大小是父级别字号的1.25倍*/
+         	  font-size: 125%;
+         	  /* line-height 为font-size的1.5倍*/
+         	  line-height: 1.5;
+         	  margin-top: 1em;
+         }
+          button.btn2{
+         	  padding: .3em .8em;
+         	  /*border: 1px solid #446d88;*/
+         	  background: #58a linear-gradient(hsla(0,10%,100%,.2),transparent);
+         	  border-radius: .2em;
+           box-shadow: 0 .05em .25em rgba(0,0,0..5);
+           text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
+         	  color: white;
+         	  /* 字体大小是父级别字号的1.25倍*/
+         	  font-size: 125%;
+         	  /* line-height 为font-size的1.5倍*/
+         	  line-height: 1.5;
+         	  margin-top: 1em;
+         }
+         button.cancel{
+         	  /*border: 1px solid #c50;*/
+         	  background-color: #c00;
+         }
+         button.ok{
+         	 background-color: #6b0;
+         	 /*border: 1px solid #6d0;*/
+         }
+      </style>
+  </head>
+  <body>
+   <header>
+     <h2>尽量减少代码重复,按钮示例</h2>
+     <hr/>
+    </header>
+    <div class="body-container">
+       <div class="button-demo">
+         <button class="btn1">Yes!</button>
+       </div>
+
+        <div class="button-demo">
+         <button class="btn2">Yes!</button>
+       </div>
+
+       <div class="button-demo">
+          <button class="btn2 cancel">Yes!</button>
+       </div>
+
+        <div class="button-demo">
+          <button class="btn2 ok">Yes!</button>
+       </div>
+    </div>
+   <footer>&copy 2016 示例学习</footer>
+  </body>
+</html>

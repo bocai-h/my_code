@@ -1,0 +1,34 @@
+<!DOCTYPE>
+<html>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+  <head>
+   <title>显示鼠标位置</title>
+   <style type="text/css">
+     body{
+     	font-size: 70%;
+     	font-family: verdana,helvetica,arial,sans-serif;
+     }
+  </style>
+  </head>
+  <body style="margin: 0px">
+     <div id="coordiv" style="float:left;width:800px;height:600px;border:1px solid #c3c3c3" onmousemove="cnvs_getCoordinates(event)" onmouseout="cnvs_clearCoordinates()">
+     </div>
+     <br/>
+     <br/>
+     <br/>
+     <div id="xycoordinates">
+     </div>
+  </body>
+   <script>
+    function cnvs_getCoordinates(e){
+      x = e.clientX;
+      y = e.clientY;
+      document.getElementById("xycoordinates").innerHTML="Coordinates:("+ x +","+ y +")";
+      document.getElementById("coordiv").style="float:left;width:800px;height:600px;border:1px solid #c3c3c3;background-color:red";
+    }
+    function cnvs_clearCoordinates(){
+    	 document.getElementById("xycoordinates").innerHTML="";
+    	 document.getElementById("coordiv").style="float:left;width:800px;height:600px;border:1px solid #c3c3c3;background-color:blue";
+    }
+  </script>
+</html>

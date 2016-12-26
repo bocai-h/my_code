@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  </head>
+  <style type="text/css">
+      /**
+ * Animated pie chart
+ */
+
+ .pie {
+	width: 100px; height: 100px;
+	border-radius: 50%;
+	background: yellowgreen;
+	background-image: linear-gradient(to right, transparent 50%, currentColor 0);
+	color: #655;
+  }
+
+ .pie::before {
+	content: '';
+	display: block;
+	margin-left: 50%;
+	height: 100%;
+	border-radius: 0 100% 100% 0 / 50%;
+	border: 1px solid black;
+	background-color: inherit;
+	transform-origin: left;
+	animation: spin 3s linear infinite, 
+	            bg 6s step-end infinite;
+  }
+
+  @keyframes spin {
+	to { transform: rotate(.5turn); }
+  }
+  @keyframes bg {
+	 50% { background: currentColor; }
+   }
+  </style>
+  <body>
+     <div class="pie"></div>
+  </body>
+</html>

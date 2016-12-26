@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtmll/DTD/xhtmll-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-type" content="text/html;charset=utf-8"/>
+  <title>RGBA color</title>
+  <style type="text/css">
+     input,textarea{
+      /* 统一输入域样式 */
+      padding: 4px;
+      border: solid 1px #E5E5E5;
+      outline: 0;
+      font: normal 13px/100% Verdana,Tahoma,sans-serif;
+      background: #FFFFFF;
+      box-shadow: rgba(0,0,0,0.1) 0px 0px 8px; /* 设置边框阴影效果 */
+      -moz-box-shadow: rgba(0,0,0,0.1) 0px 0px 8px; /* 兼容Mozilla类型的浏览器,如FF**/
+      -webkit-box-shadow: rgba(0,0,0,0.1) 0px 0px 8px; /* 兼容Webkit引擎,如Chrome和Safari等*/
+     }
+     textarea{
+      /* 定义文本区域样式 */
+      width: 400px;
+      max-width: 400px;
+      height: 150px;
+      line-height: 150%;
+     }
+     input:hover,textarea:hover,input:focus,textarea:focus{
+      border-color: #C9C9C9;
+     }
+     label{
+      /* 定义标签样式 */
+      margin-left: 10px;
+      color: #999999;
+      display:block;/*以块状显示,实现分行显示*/
+     }
+     .submit input{
+      /* 设计提交按钮样式 */
+      width: auto;
+      padding: 9px 15px;
+      background: #617798;
+      border: 0;
+      font-size: 14px;
+      color: #FFFFFF;
+     }
+  </style>
+</head>
+<body>
+  <form>
+    <p class="name">
+      <label for="name">姓名</label>
+      <input type="text" name="name" id="name"/>
+    </p>
+    <p class="email">
+      <label for="email">邮箱</label>
+      <input type="text" name="email" id="email"/>
+    </p>
+    <p class="web">
+       <label for="web">个人网址</label>
+       <input type="text" name="web" id="web"/>
+    </p>
+    <p class="text">
+      <label for="text">留言</label>
+      <textarea name="text" id="text"></textarea>
+    </p>
+    <p class="submit">
+       <input type="submit" value="提交"/>
+    </p>
+  </form>
+</body>
+</html>

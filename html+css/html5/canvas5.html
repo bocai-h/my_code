@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang='zh'>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <title>HTML 5 Canvas</title>
+  </head>
+  <body>
+     <h3>这是一个html canvas 的demo</h3>
+     <!-- <div id="coordiv" style="float:left;width:800px;height:600px;border:1px solid #c3c3c3"> -->
+       <canvas id="myCanvas" width="800" height="600" style="border:1px solid black"></canvas>
+     <!-- </div> -->
+  </body>
+  <script>
+    var c = document.getElementById("myCanvas");
+    //获取2d画笔
+    var cxt = c.getContext("2d");
+    var grd=cxt.createLinearGradient(0,0,175,50);
+    grd.addColorStop(0,"#FF0000");
+    grd.addColorStop(1,"#FFFFFF");
+    cxt.fillStyle=grd;
+    cxt.fillRect(0,0,175,50)
+  </script>
+</html>

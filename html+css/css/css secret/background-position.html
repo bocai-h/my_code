@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  </head>
+  <style type="text/css">
+      body{
+       	background: #706F6F;
+       	height: 200em;
+       }
+        div{
+       	width: 10em;
+       	height: 8em;
+       	background: white;
+         display: inline-block;
+         margin-right: 5em;
+         margin-bottom: 3em;
+         background-clip: padding-box; 
+         color: white;
+         font-size: 2em;
+       }
+       .demo1{
+       	background: url(http://csssecrets.io/images/code-pirate.svg) no-repeat #58a;
+         background-position: right bottom;
+       }
+       .demo2{
+       	background: url(http://csssecrets.io/images/code-pirate.svg) no-repeat #58a;
+         background-position: right 20px bottom 10px;
+       }
+       .demo3{
+       	/* 在简写属性中写明向右 向下 保证不支持该扩展属性的浏览器也能不影响阅读*/
+       	background: url(http://csssecrets.io/images/code-pirate.svg) no-repeat bottom right #58a;
+         background-position: right 20px bottom 10px;
+       }
+       .demo4{
+       	padding: 10px;
+       	/* 在简写属性中写明向右 向下 保证不支持该扩展属性的浏览器也能不影响阅读*/
+       	background: url(http://csssecrets.io/images/code-pirate.svg) no-repeat bottom right #58a;
+         background-position: right 10px bottom 10px;
+       }
+       .demo5{
+       	padding: 10px;
+       	/* 在简写属性中写明向右 向下 保证不支持该扩展属性的浏览器也能不影响阅读*/
+       	background: url(http://csssecrets.io/images/code-pirate.svg) no-repeat bottom right #58a;
+         background-origin: content-box;
+       }
+       .demo6{
+       	padding: 10px;
+       	/* 在简写属性中写明向右 向下 保证不支持该扩展属性的浏览器也能不影响阅读*/
+       	background: url(http://csssecrets.io/images/code-pirate.svg) no-repeat bottom right #58a;
+         background-position: calc(100% - 20px) calc(100% - 10px);
+       }
+       .demo7{
+       	background: #655;
+       	padding: .8em;
+       }
+       .demo7 > div{
+       	background: tan;
+       	border-radius: .8em;
+       	padding: 1em;
+       }
+  </style>
+  <body>
+     <div class="demo1">hello world</div>
+     <div class="demo2">hello world</div>
+     <div class="demo3">hello world</div>
+     <div class="demo4">hello world</div>
+     <div class="demo5">hello world</div>
+     <div class="demo6">hello world</div>
+  </body>
+</html>
