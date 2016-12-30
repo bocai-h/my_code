@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="Content-type" content="text/html;charset=utf-8"/>
+  <title>demo2</title>
+  <style type="text/css">
+     .input-line *{
+        float: left;
+     }
+     div.input{
+        border: 1px solid #ccc;
+        min-width: 10em;
+     }
+     .input:empty::before{
+       content: attr(placeholder);
+     }
+     .send{
+       display: none;
+     }
+     .input:focus ~ .send{
+       display: block;
+     }
+     /*div内容不为空时*/
+     .input:not(:empty) ~ .send{
+        display: block;
+        color: red;
+     }
+     .input:focus ~ .like,.input:valid ~ .like{
+       display: none;
+     }
+  </style>
+</head>
+<body>
+  <div class="input-line">
+    <div class="input" contenteditable placeholder="请输入文字"></div>
+    <div class="like">点赞</div>
+    <div class="send">发送</div>
+  </div>
+</body>
+</html>
