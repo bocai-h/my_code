@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html,charset=utf" />
+      <title>hello</title>
+      <script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js"></script>
+  <script src="./plugin.js"></script>
+   </head>
+   <body>
+      <div id="content"></div>
+      <div style="font-size: 2em;">hello</div>
+      <div style="font-size: 2em;line-height: 4em;">world</div>
+   </body>
+   <script type="text/javascript">
+      $(function(){
+          var i = 100;j = 101;
+          var min_v = $.minValue(i,j);
+          var max_v = $.maxValue(i,j);
+          $("#content").html("i="+ i + " j=" + j);
+          $("#content").append("</br>minValue=" + min_v + "maxValue=" + max_v );
+      });
+   </script>
+</html>

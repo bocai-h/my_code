@@ -1,0 +1,97 @@
+<! DOCTYPE HTML>
+<html lang="zh">
+ <head>  
+  <meta http-equiv="Content-Type" content="html/text,charset=utf-8" />
+  <title>jquery-plugin</title>
+  <script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js"></script>
+  <script src="./jquery-plugin.js"></script>
+  <style type="text/css">
+     #test-big{
+       height: 10em;
+       background-color: #666;
+     }
+     #test-line-height{
+       text-align: center;
+       /*height: 60px;*/
+     }
+     body{
+      line-height: 5;
+     }
+  </style>
+ </head>
+ <body>
+    <div id="test-div">hello world</div>   
+    <button>click me</button>
+    <div id="test-big">normal text<br><big>hello this is a <big>big label</big> test</big></div>
+    <div><cite>平凡的世界</cite>by 路遥.1958</div>
+    <div>这是一段代码:
+      <pre>
+        &lt;html&gt;
+
+         &lt;head&gt;
+           &lt;script type=&quot;text/javascript&quot; src=&quot;loadxmldoc.js&quot;&gt;
+           &lt;/script&gt;
+         &lt;/head&gt;
+
+         &lt;body&gt;
+
+          &lt;script type=&quot;text/javascript&quot;&gt;
+             xmlDoc=<a href="dom_loadxmldoc.asp">loadXMLDoc</a>(&quot;books.xml&quot;);
+              document.write(&quot;xmlDoc is loaded, ready for use&quot;);
+         &lt;/script&gt;
+
+        &lt;/body&gt;
+
+      &lt;/html&gt;
+     </pre>
+   </div>
+   <div>
+    <p>this is p1</p>
+    <span>this is p2</span>
+    <span>this is section</span>
+  </div>
+
+  <div>
+   some 
+   <p>this is p</p>
+    text
+   <p>this other p</p>
+   <span style="background-color: #800;padding-left: 2em;border: 3px solid black;">this is span</span>
+    other text
+</div>
+ <p style="display: inline">
+    some
+    <em style="display: block">this is em</em>
+    <span style="display: block">this is span</span>
+    text
+  </p>
+  <div id="test-line-height" style="font-size: 100px;border: 10px solid black;">
+    <span style="background-color: #B23">行内框</span>
+  </div>
+   <br>
+   <br>
+    <div id="test-line-height" style="font-size: 100px;border: 10px solid black;">
+    <span style="background-color: #B23">行内框</span>
+  </div>
+  <br>
+  <br>
+   <div id="test-line-height" style="font-size: 100px;border: 10px solid black;padding: 20px 0px;background-color: green;background-clip: content-box;">
+    <span style="background-color: #B23">行内框</span>
+  </div>
+
+   <br>
+  <br>
+   <div id="test-line-height" style="font-size: 100px;border: 10px solid black;padding: 20px 0px;background-color: green;background-clip: content-box;">
+    <span style="background-color: #B23">行内框</span>
+     <span style="background-color: #02B">行内框2</span>
+  </div>
+  <div style="font-size: 3em;">hhhhhhh</div>
+ </body>
+ <script>
+    $(function(){
+    	   $("button").bind("click",function(){
+           $("#test-div").bold();
+    	   });  
+    })
+ </script>
+</html>
