@@ -26,7 +26,7 @@ t1 = Thread.new{func1()}
 t2 = Thread.new{func2()}
 
 # 会挂起主线程 直到当前线程执行完毕
-#t1.join
+t1.join
 
 puts "hhhhhhhh"
 
@@ -36,6 +36,6 @@ puts "End at #{Time.now}"
 
 # Thread.current返回当前线程的对象 Thread.main返回主线程对象
 
-Thread.current[:hello] = "world"
-
-puts Thread.current[:hello]
+# Thread.current[:hello] = "world"
+#
+# puts Thread.current[:hello]
