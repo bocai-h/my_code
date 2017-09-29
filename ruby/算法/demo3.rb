@@ -1,6 +1,6 @@
 msg = 'aaa{1}bbb{2}'
-result = str.scan(/\{(\d+)\}/)
-result = result.flatten.map{|item| item.to_i}
+result = msg.scan(/\{(\d+)\}/)
+result = result.flatten.collect(&:to_i)
 content = %w(hello world byebye byebye55)
 
 result.each do |index|
